@@ -1,0 +1,5 @@
+.wrapper {
+  height: 100vh;
+  background: rgb(240, 240, 240);
+  background: radial-gradient(circle, rgba(240, 240, 240, 1) 0%, rgba(62, 73, 122, 1) 80%, rgba(33, 50, 94, 1) 100%);
+}
