@@ -18,22 +18,28 @@
 
 <body>
   <div class="wrapper">
-    <h1>Telephone Number Validator</h1>
-    <p>This program validates if a number has a valid US telephone number format. The following formats are accepted:
-    </p>
-    <ul>
-      <li>555-555-5555</li>
-      <li>(555)555-5555</li>
-      <li>(555) 555-5555</li>
-      <li>555 555 5555</li>
-      <li>5555555555</li>
-      <li>1 555 555 5555</li>
-    </ul>
-    <section id="tool">
-      <input type="tel" name="telephone" id="numberInput" placeholder="Enter the telephone number here" required />
-      <button id="checkButton">Check</button>
-      <span id="resultText">Enter a telephone number to check</span>
-    </section>
+    <div id="card-container">
+      <h1 class="text-center">Telephone Number Validator</h1>
+      <p id="icon"><i class="bi bi-telephone-fill"></i></p>
+      <p>This program validates if a number has a valid US telephone number format. If the number is
+        invalid the text in the textbox will become red. Otherwise will become green. The following
+        formats are accepted:</p>
+      <ul>
+        <li>555-555-5555</li>
+        <li>(555)555-5555</li>
+        <li>(555) 555-5555</li>
+        <li>555 555 5555</li>
+        <li>5555555555</li>
+        <li>1 555 555 5555</li>
+      </ul>
+      <section id="tool">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control fs-1" placeholder="Enter a telephone number to check"
+            aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="btn btn-outline-secondary fs-1" type="button" id="button-addon2">Check</button>
+        </div>
+      </section>
+    </div>
   </div>
 
   <!-- JavaScript Bundle with Popper -->
