@@ -44,6 +44,11 @@ ul {
   background-color: #F1D00A;
 }
 
+.form-control,
+.btn-outline-secondary {
+  font-size: 2rem;
+}
+
 .btn-outline-secondary {
   color: #3E497A;
 }
