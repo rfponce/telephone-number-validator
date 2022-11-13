@@ -1,6 +1,5 @@
-let button = document.getElementById("checkButton");
+let button = document.getElementById("button-addon2");
 let input = document.getElementById("numberInput");
-let resultText = document.getElementById("resultText");
 
 function telephoneCheck(str) {
   let pattern = /^1{0,1} {0,1}(\(\d\d\d\)|\d\d\d) {0,1}-{0,1}\d\d\d {0,1}-{0,1}\d\d\d\d$/;
@@ -9,17 +8,17 @@ function telephoneCheck(str) {
 
 function check() {
   let telephoneNumber = input.value;
+  input.classList.remove('text-success');
+  input.classList.remove('text-danger');
   
   if (telephoneNumber === "") {
     alert("You need to enter a number to evaluate");
   }
   else if (telephoneCheck(telephoneNumber) === true) {
-    resultText.textContent = "This is a valid telephone number format";
-    resultText.style = "color: green";
+    input.classList.add('text-success');
   }
   else if (telephoneCheck(telephoneNumber) === false) {
-    resultText.textContent = "This is not a valid telephone number format";
-    resultText.style = "color: red";
+    input.classList.add('text-danger');
   }
 }
 
