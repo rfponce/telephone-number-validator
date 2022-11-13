@@ -46,3 +46,17 @@ ul {
 .btn-outline-secondary {
   color: #3E497A;
 }
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  ul {
+    font-size: 2rem;
+  }
+}
